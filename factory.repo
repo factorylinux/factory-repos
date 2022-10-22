@@ -1,0 +1,10 @@
+[factory]
+type=rpm
+enabled=1
+gpgcheck=0
+repo_gpgcheck=0
+metadata_expire=7d
+skip_if_unavailable=False
+name=Factory $releasever - $basearch
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-factory-$releasever-$basearch
+baseurl=https://mirrors.factorylinux.com/factory/fc$releasever/packages/$basearch
